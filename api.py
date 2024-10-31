@@ -10,15 +10,23 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 class RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        if self.path == '':
-            self.send_response(200)
-            self.send_header('Content-type', 'application/json')
-            self.end_headers()
-            
-            # Leer el archivo JSON
-            with open('data.json') as json_file:
-                data = json.load(json_file)
-                self.wfile.write(json.dumps(data).encode('utf-8'))
+        if self.path == 'api':
+            try:
+                # Leer el archivo JSON
+                with open('data.json') as json_file:
+                    data = json.load(json_file)
+                    self.send_response(200)
+                    self.send_header('Content-type', 'application/json')
+                    self.end_headers()
+                    self.wfile.write(json.dumps(data).encode('utf-8'))
+            except FileNotFoundError:
+                self.send_response(500)
+                self.end_headers()
+                self.wfile.write(b'{"error": "Internal Server Error: data.json not found."}')
+            except json.JSONDecodeError:
+                self.send_response(500)
+                self.end_headers()
+                self.wfile.write(b'{"error": "Internal Server Error: data.json is not valid JSON."}')
         else:
             self.send_response(404)
             self.end_headers()
