@@ -1,6 +1,4 @@
-# Datos simulados
-productos = [
-    # Procesadores
+[
     {"id": 1, "nombre": "Intel Core i9-11900K", "precio": 589, "descripcion": "Procesador de 11ª generación, 8 núcleos y 16 hilos."},
     {"id": 2, "nombre": "AMD Ryzen 9 5900X", "precio": 549, "descripcion": "12 núcleos y 24 hilos, ideal para gaming y multitarea."},
     {"id": 3, "nombre": "Intel Core i7-11700K", "precio": 399, "descripcion": "8 núcleos y 16 hilos, gran equilibrio de rendimiento."},
@@ -32,7 +30,6 @@ productos = [
     {"id": 29, "nombre": "Intel Core i5-9600K", "precio": 264, "descripcion": "6 núcleos, gran opción para juegos."},
     {"id": 30, "nombre": "AMD Athlon 3000G", "precio": 49, "descripcion": "2 núcleos, ideal para tareas básicas y sistemas económicos."},
 
-    # Tarjetas Gráficas
     {"id": 31, "nombre": "NVIDIA GeForce RTX 3080", "precio": 699, "descripcion": "Gráfica potente, soporte para ray tracing y DLSS."},
     {"id": 32, "nombre": "AMD Radeon RX 6800 XT", "precio": 649, "descripcion": "Gráfica de 16GB GDDR6, excelente para gaming."},
     {"id": 33, "nombre": "NVIDIA GeForce RTX 3070", "precio": 499, "descripcion": "Rendimiento excepcional en 1440p, soporta ray tracing."},
@@ -54,7 +51,6 @@ productos = [
     {"id": 49, "nombre": "AMD Radeon Pro WX 8200", "precio": 999, "descripcion": "Ideal para tareas de diseño gráfico y CAD."},
     {"id": 50, "nombre": "NVIDIA Quadro RTX 4000", "precio": 899, "descripcion": "Gráfica profesional para diseño y edición."},
 
-    # Placas Base
     {"id": 51, "nombre": "ASUS ROG Strix B550-F Gaming", "precio": 189, "descripcion": "Placa base ATX con soporte para procesadores AMD."},
     {"id": 52, "nombre": "MSI MPG Z490 Gaming Edge WiFi", "precio": 239, "descripcion": "Placa base para Intel con WiFi y RGB."},
     {"id": 53, "nombre": "Gigabyte B450 AORUS Elite", "precio": 109, "descripcion": "Buena opción para procesadores Ryzen."},
@@ -76,7 +72,6 @@ productos = [
     {"id": 69, "nombre": "ASUS TUF Gaming B550M-Plus", "precio": 159, "descripcion": "Compacta y resistente, ideal para gaming."},
     {"id": 70, "nombre": "MSI H410M PRO-VDH", "precio": 75, "descripcion": "Placa básica para procesadores Intel."},
 
-    # Memorias RAM
     {"id": 71, "nombre": "Corsair Vengeance LPX 16GB DDR4-3200", "precio": 85, "descripcion": "Memoria RAM de alto rendimiento para gaming."},
     {"id": 72, "nombre": "Kingston Fury 32GB DDR4-3200", "precio": 145, "descripcion": "Optimizada para overclocking, ideal para edición."},
     {"id": 73, "nombre": "G.Skill Ripjaws V 16GB DDR4-3600", "precio": 95, "descripcion": "Rendimiento excelente para gaming."},
@@ -98,7 +93,6 @@ productos = [
     {"id": 89, "nombre": "G.Skill Trident Z Neo 32GB DDR4-3600", "precio": 180, "descripcion": "Diseñado para sistemas AMD Ryzen."},
     {"id": 90, "nombre": "HyperX Predator 16GB DDR4-3200", "precio": 95, "descripcion": "Rendimiento y velocidad excepcionales."},
 
-    # Fuentes de Alimentación
     {"id": 91, "nombre": "Corsair RM750x 750W", "precio": 139, "descripcion": "Fuente de alimentación modular, 80 PLUS Gold."},
     {"id": 92, "nombre": "Seasonic Focus GX-650 650W", "precio": 109, "descripcion": "Eficiente y silenciosa, con certificación 80 PLUS Gold."},
     {"id": 93, "nombre": "EVGA 600 W1 600W", "precio": 59, "descripcion": "Fuente de alimentación de buena calidad y precio."},
@@ -120,7 +114,6 @@ productos = [
     {"id": 109, "nombre": "FSP Dagger Pro 550W", "precio": 99, "descripcion": "Compacta y eficiente, ideal para PCs pequeñas."},
     {"id": 110, "nombre": "Thermaltake Litepower 450W", "precio": 39, "descripcion": "Fuente económica para configuraciones básicas."},
 
-    # Discos Duros
     {"id": 111, "nombre": "Seagate Barracuda 2TB", "precio": 59, "descripcion": "Disco duro mecánico confiable para almacenamiento masivo."},
     {"id": 112, "nombre": "WD Blue 1TB", "precio": 49, "descripcion": "Disco duro mecánico, ideal para almacenamiento general."},
     {"id": 113, "nombre": "Toshiba X300 4TB", "precio": 109, "descripcion": "Alto rendimiento y capacidad, ideal para gamers."},
@@ -142,7 +135,6 @@ productos = [
     {"id": 129, "nombre": "SanDisk Ultra 1TB SSD", "precio": 99, "descripcion": "Excelente rendimiento y fiabilidad."},
     {"id": 130, "nombre": "Samsung T5 500GB Portable SSD", "precio": 99, "descripcion": "Almacenamiento portátil rápido y confiable."},
 
-    # Sistemas de Refrigeración
     {"id": 131, "nombre": "Cooler Master Hyper 212 RGB", "precio": 49, "descripcion": "Refrigeración por aire eficiente con iluminación RGB."},
     {"id": 132, "nombre": "Noctua NH-D15", "precio": 89, "descripcion": "Refrigerador de aire premium, excelente rendimiento."},
     {"id": 133, "nombre": "be quiet! Dark Rock Pro 4", "precio": 89, "descripcion": "Silencioso y eficiente, ideal para overclocking."},
@@ -162,5 +154,5 @@ productos = [
     {"id": 147, "nombre": "Deepcool Castle 240EX", "precio": 99, "descripcion": "Refrigeración líquida AIO con iluminación RGB."},
     {"id": 148, "nombre": "Cooler Master MA620P", "precio": 79, "descripcion": "Refrigerador por aire con doble torre y RGB."},
     {"id": 149, "nombre": "Noctua NH-L12S", "precio": 59, "descripcion": "Refrigerador compacto, ideal para sistemas silenciosos."},
-    {"id": 150, "nombre": "ARCTIC Freezer 34 eSports", "precio": 49, "descripcion": "Refrigerador por aire con doble ventilador."},
-])
+    {"id": 150, "nombre": "ARCTIC Freezer 34 eSports", "precio": 49, "descripcion": "Refrigerador por aire con doble ventilador."}
+]
